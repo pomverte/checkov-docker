@@ -2,18 +2,15 @@ name: Build
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Build the Docker image
-      run: docker image build . --file Dockerfile --tag vietnem/checkov:1.0.385
-
+      - uses: actions/checkout@v2
+      - name: Build the Docker image
+        run: docker image build . --file Dockerfile --tag vietnem/checkov:1.0.411

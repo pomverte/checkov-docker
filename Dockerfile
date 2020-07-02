@@ -1,5 +1,5 @@
-FROM rrey/azure-devops-base-container:v0.1.1
+FROM rrey/azdo-base-container:v0.1.2
 
 RUN apk add --no-cache --update py3-pip
 
-RUN pip3 install -U checkov==1.0.397
+RUN pip3 install -U checkov==1.0.411
