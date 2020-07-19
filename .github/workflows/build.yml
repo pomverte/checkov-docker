@@ -13,4 +13,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build the Docker image
-        run: docker image build . --file Dockerfile --tag vietnem/checkov:1.0.411
+        run: docker image build . --file Dockerfile --tag vietnem/checkov:1.0.442
