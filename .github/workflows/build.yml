@@ -12,5 +12,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Build the Docker image
-        run: docker image build . --file Dockerfile --tag vietnem/checkov:1.0.442
+
+      - name: Build and push Docker images
+        uses: docker/build-push-action@v1
+        with:
+          username: vietnem
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          repository: vietnem/checkov
+          tags: 1.0.442
+          tag_with_ref: true
