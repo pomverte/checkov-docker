@@ -21,5 +21,5 @@ jobs:
           username: vietnem
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: vietnem/checkov
-          tags: 1.0.625, 1.0
+          tags: 1.0.636, 1.0
           tag_with_ref: true
